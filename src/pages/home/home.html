@@ -1,0 +1,56 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="font"></ion-icon>
+    </button>
+        <ion-title class="centered">Thailand Events&Festivals</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="no-scroll">
+  <div class="head"><img src="img/head.jpg"/></div>
+  
+  <!--button in the home page is here-->
+  <ion-content class="no-scroll">
+    <ion-grid class="grid-basic-page">
+          <ion-row>
+              <ion-col><button [navPush]="top5sort" style="background-color:#f47d4a">
+                <ion-icon name="flame"></ion-icon><br>TOP5</button></ion-col>
+              <ion-col><button [navPush]="article" style="background-color:#e1315b">
+                 <ion-icon name="book"></ion-icon><br>BLOG</button></ion-col>
+              <ion-col><button [navPush]="all" style="background-color:#8A6EA4">
+                <br>EVENTS<br>&<br>FESTIVALS</button></ion-col>
+              <ion-col><button [navPush]="favouriteList" style="background-color:#008dcb">
+                <ion-icon name="heart"></ion-icon><br>FAVORITE</button></ion-col>
+          </ion-row>
+      </ion-grid>
+
+  <!--Article in home page is here-->
+
+      <p align="center">
+            When thinking of Thailand, <br>images 
+      of shimmering white sand beaches, lush tropical jungles, and golden 
+      Buddhist temples usually spring to mind, but this friendly,
+      exotic country is also home to a fascinating culture, 
+      deeply influenced by religion and spirituality. 
+            <br><br>There’s no better way to experience Thailand in 
+      all its fabulous ethnic diversity than through its 
+      spectacular festivals. Brimming with color, sacred 
+      rituals, and one-of-a-kind ancient traditions, these 
+      glorious events will make you want to grab your 
+      passport and book yourself a flight to witness them 
+      first hand.
+      </p>
+
+
+</ion-content>
+
+</ion-content>
+    <script src="lib/pouchdb/dist/pouchdb.min.js"></script>
+    <script src="lib/pouchdb-authentication/dist/pouchdb.authentication.min.js"></script>
+    <script src="lib/angular-pouchdb/angular-pouchdb.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/pouchdb/latest/pouchdb.min.js"></script>
+
+

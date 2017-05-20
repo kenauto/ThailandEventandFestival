@@ -1,0 +1,30 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title class="centered">All of Events and Festivals</ion-title>
+    </ion-navbar>
+    <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)"></ion-searchbar>
+
+</ion-header>
+
+<ion-content class="All">
+
+    <ion-list *ngIf="viewMode==='list'">
+
+        <ion-item-sliding *ngFor="let All of Alls">
+            <button ion-item (click)="openAllDetail(All)">
+                <ion-thumbnail item-left>
+                    <img src="{{All.thumb}}"/>
+                </ion-thumbnail>
+                <h2>{{All.name}}</h2>
+                <p>{{ All.genre }}</p>
+            </button>
+        </ion-item-sliding>
+
+    </ion-list>
+</ion-content>
+

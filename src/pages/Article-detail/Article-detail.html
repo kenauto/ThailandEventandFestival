@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Article Detail</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="Article" padding>
+ 
+<img class="full-image" src="{{Article.picture}}">
+    <h1>  {{Article.name}} </h1>
+    <h4 style="font-size: 11px; color: grey;">{{Article.Date}}, BY {{Article.Credit}}</h4>
+        <img src="{{Article.picture2}}"/> 
+            <p>{{Article.Description1}}</p> 
+        <img src="{{Article.picture3}}"/>   
+            <p>{{Article.Description2}}</p> 
+    <p>
+       <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+
+
+</ion-content>

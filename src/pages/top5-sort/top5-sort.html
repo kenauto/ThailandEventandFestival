@@ -1,0 +1,32 @@
+
+<ion-header>
+
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+                <ion-title class="centered">TOP 5 </ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="Top5Sort">
+
+    <ion-list *ngIf="viewMode==='list'">
+
+        <ion-item-sliding *ngFor="let Top5Sort of Top5Sorts">
+            <button ion-item (click)="openTop5Detail(Top5Sort)">
+                <ion-thumbnail item-left>
+                    <img src="{{Top5Sort.thumb}}"/>
+                </ion-thumbnail>
+                <h2>{{Top5Sort.name}}</h2>
+                <p>{{ Top5Sort.genre }}</p>
+            </button>
+            <!-- <ion-item-options>
+                <button danger (click)="deleteItem(Top5Sort)">Delete</button>
+            </ion-item-options> -->
+        </ion-item-sliding>
+
+    </ion-list>
+</ion-content>
+

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Blog</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <ion-list >
+
+        <button  ion-item *ngFor="let Article of Articles" (click)="openArticleDetail(Article)" >
+           <ion-grid>
+             <ion-row style="height: 80px;" >
+               <ion-col >
+                <img src="{{Article.picture1}}"/>
+               </ion-col>
+               <ion-col col-9 >
+            <h3>{{Article.name}}</h3>
+            <h4 style="font-size: 11px; color: grey;">{{Article.Date}}, BY {{Article.Credit}}</h4>
+            <p>{{Article.Brief}}</p>
+               </ion-col>
+             </ion-row>
+           </ion-grid>
+           
+        </button>
+
+    </ion-list>
+
+ 
+</ion-content>
+
+

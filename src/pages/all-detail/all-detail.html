@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>All of Events and Festivals</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+   <ion-content class="All" padding>
+        
+ 
+<img class="full-image" src="{{All.picture}}">
+   
+ <h1>  {{All.name}} </h1>           
+              <ion-item text-wrap>  <p>{{All.description}}</p> </ion-item>
+    
+   <ion-card-content color="gray">
+     Genre: {{ All.genre }}  
+  </ion-card-content>
+ 
+
+<ion-row>
+    <ion-col>
+            <button ion-button icon-left (click)="favorite(All)" clear item-left>
+                <ion-icon name="heart"></ion-icon>
+                Favorite
+            </button>
+             </ion-col>
+             <ion-col>
+            <button ion-button icon-left (click)="share(All)" clear item-right>
+                <ion-icon name="share"></ion-icon>
+                Share
+            </button>
+       
+
+        </ion-col>
+  </ion-row>
+
+
+   
+</ion-content>

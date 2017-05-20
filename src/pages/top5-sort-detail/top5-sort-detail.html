@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Top5SortDetailPage</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+   <ion-content class="Top5Sort" padding>
+        
+ 
+<img class="full-image" src="{{Top5Sort.picture}}">
+   
+ <h1>  {{Top5Sort.name}} </h1>           
+              <ion-item text-wrap>  <p>{{Top5Sort.description}}</p> </ion-item>
+    
+   <ion-card-content color="gray">
+     Genre: {{ Top5Sort.genre }}  
+  </ion-card-content>
+ 
+
+    <button ion-button icon-left (click)="share(Top5Sort)" clear item-right>
+        <ion-icon name="share"></ion-icon>
+        Share
+    </button>
+
+
+   
+</ion-content>
